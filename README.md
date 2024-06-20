@@ -1,5 +1,5 @@
 # Absolute value
-## Creating tasks for the Yandex platform
+## Creating tasks for the Yandex.Contest platform
 
 Creating tasks for the Yandex platform.
 The head of the group is a big fan of mathematics, he puts negative numbers instead of absences for absences. The couple ended and the headman went to the buffet, leaving the magazine in the audience. Become that full-time student.
