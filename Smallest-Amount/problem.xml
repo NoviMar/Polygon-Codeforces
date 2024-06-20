@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="5" short-name="min-branch-dfs" url="https://polygon.codeforces.com/p06uQYV/novimar/min-branch-dfs">
+    <names>
+        <name language="russian" value="Наименьшая сумма"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>63</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test method="manual" sample="true"/>
+                <test cmd="generator1 10 -10 10 1" method="generated"/>
+                <test cmd="generator1 10 -10 10 2" method="generated"/>
+                <test cmd="generator1 10 -10 10 3" method="generated"/>
+                <test cmd="generator1 10 -10 10 4" method="generated"/>
+                <test cmd="generator1 10 -10 10 5" method="generated"/>
+                <test cmd="generator1 10 -10 10 6" method="generated"/>
+                <test cmd="generator1 10 -10 10 7" method="generated"/>
+                <test cmd="generator1 10 -10 10 8" method="generated"/>
+                <test cmd="generator1 10 -10 10 9" method="generated"/>
+                <test cmd="generator1 10 -10 10 10" method="generated"/>
+                <test cmd="generator1 10 -10 10 11" method="generated"/>
+                <test cmd="generator1 10 -10 10 12" method="generated"/>
+                <test cmd="generator1 10 -10 10 13" method="generated"/>
+                <test cmd="generator1 10 -10 10 14" method="generated"/>
+                <test cmd="generator1 10 -10 10 15" method="generated"/>
+                <test cmd="generator1 10 -10 10 16" method="generated"/>
+                <test cmd="generator1 10 -10 10 17" method="generated"/>
+                <test cmd="generator1 10 -10 10 18" method="generated"/>
+                <test cmd="generator1 10 -10 10 19" method="generated"/>
+                <test cmd="generator1 10 -10 10 20" method="generated"/>
+                <test cmd="generator1 10 -10 10 21" method="generated"/>
+                <test cmd="generator1 10 -10 10 22" method="generated"/>
+                <test cmd="generator1 10 -10 10 23" method="generated"/>
+                <test cmd="generator1 10 -10 10 24" method="generated"/>
+                <test cmd="generator1 10 -10 10 25" method="generated"/>
+                <test cmd="generator1 10 -10 10 26" method="generated"/>
+                <test cmd="generator1 10 -10 10 27" method="generated"/>
+                <test cmd="generator1 10 -10 10 28" method="generated"/>
+                <test cmd="generator1 10 -10 10 29" method="generated"/>
+                <test cmd="generator1 10 -10 10 30" method="generated"/>
+                <test cmd="generator1 100 -100 100 1" method="generated"/>
+                <test cmd="generator1 100 -100 100 2" method="generated"/>
+                <test cmd="generator1 100 -100 100 3" method="generated"/>
+                <test cmd="generator1 100 -100 100 4" method="generated"/>
+                <test cmd="generator1 100 -100 100 5" method="generated"/>
+                <test cmd="generator1 100 -100 100 6" method="generated"/>
+                <test cmd="generator1 100 -100 100 7" method="generated"/>
+                <test cmd="generator1 100 -100 100 8" method="generated"/>
+                <test cmd="generator1 100 -100 100 9" method="generated"/>
+                <test cmd="generator1 100 -100 100 10" method="generated"/>
+                <test cmd="generator1 100 -100 100 11" method="generated"/>
+                <test cmd="generator1 100 -100 100 12" method="generated"/>
+                <test cmd="generator1 100 -100 100 13" method="generated"/>
+                <test cmd="generator1 100 -100 100 14" method="generated"/>
+                <test cmd="generator1 100 -100 100 15" method="generated"/>
+                <test cmd="generator1 100 -100 100 16" method="generated"/>
+                <test cmd="generator1 100 -100 100 17" method="generated"/>
+                <test cmd="generator1 100 -100 100 18" method="generated"/>
+                <test cmd="generator1 100 -100 100 19" method="generated"/>
+                <test cmd="generator1 100 -100 100 20" method="generated"/>
+                <test cmd="generator1 100 -100 100 21" method="generated"/>
+                <test cmd="generator1 100 -100 100 22" method="generated"/>
+                <test cmd="generator1 100 -100 100 23" method="generated"/>
+                <test cmd="generator1 100 -100 100 24" method="generated"/>
+                <test cmd="generator1 100 -100 100 25" method="generated"/>
+                <test cmd="generator1 100 -100 100 26" method="generated"/>
+                <test cmd="generator1 100 -100 100 27" method="generated"/>
+                <test cmd="generator1 100 -100 100 28" method="generated"/>
+                <test cmd="generator1 100 -100 100 29" method="generated"/>
+                <test cmd="generator1 100 -100 100 30" method="generated"/>
+            </tests>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker1.3.cpp" type="cpp.g++17"/>
+            </executable>
+            <executable>
+                <source path="files/generator1.py" type="python.3"/>
+            </executable>
+            <executable>
+                <source path="files/validator1.3.cpp" type="cpp.g++17"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker1.3.cpp" type="cpp.g++17"/>
+            <copy path="check.cpp" type="cpp.g++17"/>
+            <testset>
+                <test-count>5</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="presentation-error"/>
+                    <test verdict="wrong-answer"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator1.3.cpp" type="cpp.g++17"/>
+                <testset>
+                    <test-count>8</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/Main.java" type="java11"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/incorrect.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/mainSolution.cpp" type="cpp.g++17"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/tle.cpp" type="cpp.g++17"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
